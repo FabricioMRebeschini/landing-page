@@ -1,0 +1,364 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* #212343/  #472663 / #DDDDDD */
+
+html,body{
+	height:100%;
+}
+/*para centralizar essa configuração*/
+.center{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1280px;
+	
+}
+
+.clear{
+	clear: both;
+}
+
+.center img{
+	padding-top: 20px;
+	width: 117px;
+}
+
+
+.header{
+	width: 100%;
+	height: 60px;
+	background-color: #212343;
+	padding: 0 2%;
+}
+
+#container-banner{
+	width: 100%;
+	padding: 0 2%;
+	height: 557px;
+	background-image: url('../images/header_bg.png');
+	background-size: cover;
+	background-position: center;
+	
+}
+
+#container-banner .center{
+	height:100%;
+}
+
+.container-list{
+	float: left;
+	background-color: #2123438d;
+	width: 519px;
+	height: 300px;
+	margin-top: 100px;
+	padding: 15px;
+}
+
+.container-list ul{
+	/*joga os pontos da lista pra dentro pq por padrao fica pra fora*/
+	list-style-position: inside;
+	padding: 10px;
+	
+}
+
+.container-list li{
+	color: white;
+	padding: 8px;
+}
+
+.form{
+	width: 400px;
+	height: calc(100% + 30px);
+	background-color: rgb(255, 255, 255);
+	float: right;
+	position: relative;
+	top: -15px;
+	border: 8px solid #cccccc73;
+	text-align: left;
+	/*clip (cor) é para mostrar a borda transparente tem também o background origin para (imagem)*/
+	background-clip: padding-box;
+	background-color: white;
+}
+
+.form h2{
+	font-size: 21px;
+	color: #99999920;
+	text-align: center;
+	text-shadow: 1px 1px 0px rgba(93, 91, 91, 0.871);
+}
+
+
+.input-container input[type=text]{
+	border: 1px solid #524f5475;
+	margin-top: 5px;
+	margin-left: 18px;
+	height: 55px;
+	width: 344px;
+	
+}
+
+.input-container{
+	margin-top: 40px;
+	
+	
+}
+
+.input-container span{
+	display: inline-block;
+	width: 100px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #66646495;	
+	margin-left: 4px;
+}
+
+.form p{
+	color: #66646495;
+	font-size: 18px;	
+	margin: 20px 0;
+	margin-left: 6px;
+}
+
+
+.form input[type=submit]{
+	width: 270px;
+	height: 66px;
+	background-color: #212343;
+	color: white;
+	font-weight: bolder;
+	font-size: 17px;
+	border: 0;
+	cursor: pointer;
+	
+	
+}
+
+.form .submit-botao{
+	text-align: center;
+	
+}
+
+.form input[type=submit]:hover{
+	background-color: white;
+	border: 2px solid #ccc;
+	color: black;
+}
+
+
+.container-text{
+	padding: 30px 2%;
+	background-color: #8783878c;
+	width: 100%;
+	height: 350px;
+	text-align: center;
+	
+}
+
+.container-text h2{
+	padding-top: 25px;
+	margin: 10px 0px;
+	text-align: center;
+	font-weight: normal;
+	
+}
+
+.container-text p{
+	font-size: 17px;
+	width: 100%;
+	max-width: 768px;
+	/*pq a tag P é blobk entao voce tem que colocar inline-block para ficar no centro*/
+	display: inline-block;
+	text-align: justify;
+	margin: 20px 0;
+}
+
+.arrow{
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/arrow.png);
+	margin: 0 auto;
+	position: relative;
+	top: -20px;
+	background-size: 100% 100%;
+
+}
+
+section{
+	padding: 90px 2%;
+	text-align: center;
+	
+}
+
+.section h2{
+	text-align: center;
+	font-weight: normal;
+	padding-bottom: 30px;
+}
+
+.section p{
+	text-align: justify;
+	width: 100%;
+	padding: 20px;
+}
+
+.container-section{
+	margin: 10px 0;
+	text-align: center;
+
+}
+
+.container-single{
+	float: left;
+	width: 33.333%;
+	padding: 30px;
+}
+
+.text-container-single h2{
+	padding-top: 10px;
+	padding-bottom: 17px;
+	
+}
+
+.text-container-single p{
+	padding-top: 1px;
+}
+
+
+footer{
+	border-top:  4px solid #212343;
+	padding: 10px 0;
+	
+}
+
+footer > div{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+.footer{
+	margin-bottom: 15px;
+	margin-left: 10px;
+	font-weight: normal;
+	color: #2123436f;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.rodape a{
+	text-decoration: none;
+	color: #2123436f;
+}
+
+.rodape a:hover{
+	text-decoration: underline;
+	color: #212343;
+}
+
+
+
+
+@media screen and (max-width:1024px){
+	.header{
+		width: 100%;
+		text-align: center;
+		
+		
+	}
+
+	#container-banner{
+		width: 100%;
+		padding: 40 2%;
+		height: auto;
+		text-align: center;
+		
+	}
+
+	.form{
+		max-width: 400px;
+		width: 60%;
+		height: 100%;
+		float: right;
+		top:0;
+		padding: 10px;
+		margin-bottom: 20px;
+		
+		
+	}
+
+	.container-list{
+		float: left;
+		width: 40%;
+		max-width: 519px;
+		height: 300px;
+		padding: 30px;
+		margin-bottom: 20px;
+	}
+
+	.input-container input[type=text]{
+	border: 1px solid #524f5475;
+	margin-top: 5px;
+	margin:0 auto;
+	height: 55px;
+	width: 100%;
+	
+}
+
+
+.form input[type=submit]{
+	width: 80%;
+	height: 66px;
+	background-color: #212343;
+	color: white;
+	font-weight: bolder;
+	font-size: 17px;
+	border: 0;
+	cursor: pointer;
+	
+	
+}
+
+	.container-text{
+		width: 100%;
+		
+	}
+}
+
+@media screen and (max-width:768px){
+	.container-list{
+		margin-top: 15px;
+		float: none;
+		display: inline-block;
+		width: 100%;
+		padding: 12%;
+
+	}
+
+	.container-text{
+		padding-left: 4%;
+		padding-right: 4%;
+	}
+
+	.form{
+		float: none;
+		display: inline-block;
+		width: 90%;
+	}
+
+	.container-single{
+		float: none;
+		width: 100%;
+		max-width: 600px;
+		padding: 40px 0;
+		display: inline-block;
+	}
+
+}
